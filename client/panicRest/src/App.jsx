@@ -17,8 +17,8 @@ import Flow from "./Components/ModelButton.jsx";
 import Settings from "./Components/Settings.jsx";
 import ErrorBoundary from "./Components/ErrorBoundary.jsx";
 
-export const BASE_URL = "http://localhost:3001/users";
-export const BASE_URL_MESS = "http://localhost:3001/massage";
+export const BASE_URL = "https://lastproject-iyl7.onrender.com/users";
+export const BASE_URL_MESS = "https://lastproject-iyl7.onrender.com/massage";
 export const AuthContext = createContext();
 
 function App() {
@@ -69,7 +69,15 @@ function App() {
             />
             <Route path="/login" element={<Login page="Login" />} />
             <Route path="/register" element={<Register page="Register" />} />
-            <Route path="/MyAccount" element={<MyAccount page="MyAccount" />} />
+
+            <Route
+              path="/MyAccount"
+              element={
+                <Auth>
+                  <MyAccount page="MyAccount" />
+                </Auth>
+              }
+            />
             <Route path="/settings" element={<Settings />} />
             <Route
               path="/Massage"

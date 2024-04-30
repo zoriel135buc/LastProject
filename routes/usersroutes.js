@@ -33,12 +33,12 @@ router.get("/verify", verifyToken, (req, res) => {
     { user_id, useremail, last_name, first_name, phone },
     secret,
     {
-      expiresIn: "60s",
+      expiresIn: "1h",
     }
   );
 
   res.cookie("token", accessToken, {
-    maxAge: 60 * 1000,
+    maxAge: 60 * 1000 * 60,
     httpOnly: true,
   });
 

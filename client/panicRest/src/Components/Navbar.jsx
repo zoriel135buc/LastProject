@@ -89,7 +89,7 @@ export default function MenuAppBar() {
             </Link>
           </Typography>
           {auth && (
-            <div style={{ marginLeft: "1700px" }}>
+            <div style={{ marginLeft: "1200px" }}>
               <IconButton
                 size="large"
                 aria-label="account of current user"

@@ -6,13 +6,12 @@ const About = ({ page }) => {
   return (
     <Box
       sx={{
+        flexDirection: "column",
         backgroundImage: `url(${aboutBg})`,
         backgroundSize: "cover",
         height: "100vh",
-        p: 4,
-        display: "flex",
         justifyContent: "center",
-        flexDirection: "column",
+        display: "flex",
         alignItems: "center",
       }}
     >
@@ -30,19 +29,19 @@ const About = ({ page }) => {
       </Typography>
       <ul>
         <li>
-          <Typography variant="h4">
+          <Typography variant="h5">
             Leave a Message: You can leave a message for a representative who
             will provide guidance and support.
           </Typography>
         </li>
         <li>
-          <Typography variant="h4">
+          <Typography variant="h5">
             Anxiety Attack Video: Watch a helpful video that provides tips and
             techniques for managing anxiety attacks.
           </Typography>
         </li>
         <li>
-          <Typography variant="h4">
+          <Typography variant="h5">
             Body Response Model: Explore a model that illustrates what happens
             to our body during an anxiety attack, helping you understand the
             physiological aspects.
