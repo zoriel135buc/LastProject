@@ -62,7 +62,7 @@ export default function AccountCard() {
         }}
       >
         <CardContent>
-          <Typography variant="h2" color="text.primary" gutterBottom>
+          <Typography variant="h2" color="darkblue" gutterBottom>
             First Name: {firstName}
           </Typography>
           <Typography
@@ -74,7 +74,7 @@ export default function AccountCard() {
             Last Name: {lastName}
           </Typography>
           <Typography
-            sx={{ mb: 1.5, color: "snow" }}
+            sx={{ mb: 1.5, color: "blue" }}
             color="text.secondary"
             gutterBottom
           >

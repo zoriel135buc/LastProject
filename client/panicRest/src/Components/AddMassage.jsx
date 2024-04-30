@@ -62,7 +62,7 @@ const PostMassage = ({ page }) => {
         />
       </Box>
       <Button onClick={handleClick} variant="contained">
-        {page}
+        Post message
       </Button>
     </div>
   );

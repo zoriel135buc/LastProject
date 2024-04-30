@@ -31,8 +31,8 @@ const Settings = () => {
         paddingTop: "40px",
       }}
     >
-      <h1 style={{ marginBottom: "-10px", marginTop: "50px" }}>settings</h1>
-      <h2 style={{ marginBottom: "-10px" }}>
+      <h1 style={{ marginBottom: "50px", marginTop: "50px" }}>settings</h1>
+      <h2 style={{ marginBottom: "10px" }}>
         Choose one of the following options
       </h2>
 
@@ -44,7 +44,7 @@ const Settings = () => {
           onChange={handleSwitchChange("Model")}
         />
       </div>
-      <div style={{ marginBottom: "10px" }}>
+      <div style={{ marginBottom: "20px" }}>
         video
         <Switch
           {...label}

@@ -8,6 +8,7 @@ import Flow from "./ModelButton.jsx";
 import Massage from "./Massage";
 import PhoneCall from "./PhoneCall.jsx";
 import choice from "../assets/choice.jpg";
+import PostMassage from "./AddMassage.jsx";
 
 const Choice = ({ page }) => {
   const { selectedSwitch } = useContext(AuthContext);
@@ -17,7 +18,7 @@ const Choice = ({ page }) => {
     navigate("/video");
   };
   const MassageButton = () => {
-    navigate("/Massage");
+    navigate("/PostMassage");
   };
 
   const ModelButton = () => {
@@ -30,7 +31,7 @@ const Choice = ({ page }) => {
       ) : selectedSwitch === "video" ? (
         <Video />
       ) : selectedSwitch === "massage" ? (
-        <Massage />
+        <PostMassage />
       ) : selectedSwitch === "phoneCall" ? (
         <PhoneCall />
       ) : (
