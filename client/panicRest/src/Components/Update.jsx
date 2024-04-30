@@ -6,6 +6,7 @@ import { BASE_URL } from "../App";
 import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
+import update from "../assets/update.avif";
 
 const Update = ({ page }) => {
   const {
@@ -56,7 +57,17 @@ const Update = ({ page }) => {
   };
 
   return (
-    <div>
+    <div
+      style={{
+        flexDirection: "column",
+        backgroundImage: `url(${update})`,
+        backgroundSize: "cover",
+        height: "100vh",
+        justifyContent: "center",
+        display: "flex",
+        alignItems: "center",
+      }}
+    >
       <h2>{page}</h2>
       <Box component={"form"} sx={{ m: 1 }} autoComplete="off">
         <TextField

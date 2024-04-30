@@ -5,6 +5,7 @@ const usersRouter = require("./routes/usersroutes.js");
 const massageRouter = require("./routes/massageRoutes.js");
 const app = express();
 const path = require("path");
+
 const corsOptions = {
   origin: "http://localhost:5173",
   methods: ["GET", "POST", "PUT", "DELETE"],
