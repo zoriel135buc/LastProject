@@ -22,10 +22,10 @@ app.listen(process.env.PORT || 3001, () => {
 app.use("/massage", massageRouter);
 app.use("/users", usersRouter);
 
-app.use(express.static(path.join(__dirname, "client/panicRest/build")));
+app.use(express.static(path.join(__dirname, "client/panicRest/dist")));
 
 app.get("*", (req, res) => {
   res.sendFile(
-    path.resolve(__dirname, "./client/panicRest/build", "index.html")
+    path.resolve(__dirname, "./client/panicRest/dist", "index.html")
   );
 });
