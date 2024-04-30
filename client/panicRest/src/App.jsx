@@ -78,20 +78,70 @@ function App() {
                 </Auth>
               }
             />
-            <Route path="/settings" element={<Settings />} />
+            <Route
+              path="/settings"
+              element={
+                <Auth>
+                  <Settings />
+                </Auth>
+              }
+            />
             <Route
               path="/Massage"
-              element={<Massage page={"Massage"} />}
+              element={
+                <Auth>
+                  <Massage page={"Massage"} />
+                </Auth>
+              }
             ></Route>
-            <Route path="/About" element={<About page={"About"} />}></Route>
-            <Route path="/Update" element={<Update page={"Update"} />}></Route>
+            <Route
+              path="/About"
+              element={
+                <Auth>
+                  <About page={"About"} />
+                </Auth>
+              }
+            ></Route>
+            <Route
+              path="/Update"
+              element={
+                <Auth>
+                  <Update page={"Update"} />
+                </Auth>
+              }
+            ></Route>
             <Route
               path="/PostMassage"
-              element={<PostMassage page={"PostMassage"} />}
+              element={
+                <Auth>
+                  <PostMassage page={"PostMassage"} />
+                </Auth>
+              }
             ></Route>
-            <Route path="/Video" element={<Video page={"Video"} />}></Route>
-            <Route path="/Choice" element={<Choice page={"Choice"} />}></Route>
-            <Route path="/Flow" element={<Flow page={"Flow"} />}></Route>
+            <Route
+              path="/Video"
+              element={
+                <Auth>
+                  <Video page={"Video"} />
+                </Auth>
+              }
+            ></Route>
+            <Route
+              path="/Choice"
+              element={
+                <Auth>
+                  <Choice page={"Choice"} />
+                </Auth>
+              }
+            ></Route>
+            <Route
+              path="/Flow"
+              element={
+                <Auth>
+                  <Flow page={"Flow"} />
+                </Auth>
+              }
+            ></Route>
           </Routes>
         </AuthContext.Provider>
       </ErrorBoundary>
