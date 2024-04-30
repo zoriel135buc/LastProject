@@ -29,7 +29,6 @@ const Settings = () => {
         color: "white",
         textAlign: "center",
         paddingTop: "40px",
-        justifyContent: "space-between",
       }}
     >
       <h1 style={{ marginBottom: "-10px", marginTop: "50px" }}>settings</h1>

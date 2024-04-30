@@ -4,7 +4,7 @@ const {
   postMassage,
   deleteMassage,
   updateMassage,
-} = require("../models/massageModels.js");
+} = require("../models/massagemodels.js");
 
 const _getAllMassages = async (req, res) => {
   try {
