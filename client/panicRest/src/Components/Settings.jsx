@@ -22,6 +22,7 @@ const Settings = () => {
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
         minHeight: "100vh",
+        width: "100vw",
         display: "flex",
         flexDirection: "column",
         justifyContent: "center",
@@ -29,6 +30,7 @@ const Settings = () => {
         color: "white",
         textAlign: "center",
         paddingTop: "40px",
+        overflow: "hidden",
       }}
     >
       <h1 style={{ marginBottom: "50px", marginTop: "50px" }}>settings</h1>

@@ -9,10 +9,11 @@ const About = ({ page }) => {
         flexDirection: "column",
         backgroundImage: `url(${aboutBg})`,
         backgroundSize: "cover",
-        height: "100vh",
-        justifyContent: "center",
+        minHeight: "100vh",
+        padding: "20px", // Added padding for mobile devices
         display: "flex",
         alignItems: "center",
+        textAlign: "center",
       }}
     >
       <Typography variant="h1" gutterBottom>
@@ -27,7 +28,7 @@ const About = ({ page }) => {
       <Typography variant="h3" paragraph>
         Here's what you can find on our site:
       </Typography>
-      <ul>
+      <ul style={{ paddingLeft: "20px" }}>
         <li>
           <Typography variant="h5">
             Leave a Message: You can leave a message for a representative who

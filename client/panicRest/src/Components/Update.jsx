@@ -66,10 +66,11 @@ const Update = ({ page }) => {
         justifyContent: "center",
         display: "flex",
         alignItems: "center",
+        textAlign: "center",
       }}
     >
-      <h2>{page}</h2>
-      <Box component={"form"} sx={{ m: 1 }} autoComplete="off">
+      <h2 style={{ color: "white" }}>{page}</h2>
+      <Box component={"form"} sx={{ m: 1, color: "white" }} autoComplete="off">
         <TextField
           sx={{ m: 1 }}
           id="email"

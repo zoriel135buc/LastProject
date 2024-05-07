@@ -65,6 +65,9 @@ const Login = ({ page }) => {
         flexDirection: "column",
         alignItems: "center",
         paddingTop: "100px",
+        justifyContent: "center",
+        placeItems: "center",
+        textAlign: "center",
       }}
     >
       <h2

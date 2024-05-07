@@ -71,7 +71,7 @@ const Home = () => {
         />
         <div className="content">
           <h1>
-            hello {firstName} {lastName}
+            Hello {firstName} {lastName}
           </h1>
           <EmergencyButton
             selectedSwitch={selectedSwitch}

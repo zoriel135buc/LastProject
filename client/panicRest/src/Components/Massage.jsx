@@ -68,18 +68,17 @@ const Massage = ({ page }) => {
         sx={{
           backgroundImage: `url(${msgImg})`,
           backgroundSize: "cover",
-          height: "100vh",
-          justifyContent: "center",
+          minHeight: "100vh",
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
+          justifyContent: "center",
+          padding: "20px", // Added padding for mobile devices
         }}
       >
         <h3>{page}</h3>
         {getMess.map((item, index) => (
-          <Card key={item.massage_id} sx={{ maxWidth: 400, marginBottom: 2 }}>
-            {" "}
-            {/* Adjusted marginBottom */}
+          <Card key={item.massage_id} sx={{ width: "100%", marginBottom: 2 }}>
             <CardContent>
               <input
                 type="checkbox"
@@ -94,15 +93,30 @@ const Massage = ({ page }) => {
             </CardContent>
           </Card>
         ))}
-        <Box sx={{ marginTop: 5 }}>
+        <Box
+          sx={{
+            marginTop: 2,
+            display: "flex",
+            flexDirection: { xs: "column", md: "row" }, // Adjusted flex direction for different screen sizes
+            justifyContent: "center",
+            alignItems: "center",
+            gap: 2,
+          }}
+        >
           <Button
             onClick={PostMassage}
             variant="contained"
-            style={{ marginRight: 10 }}
+            size="large"
+            sx={{ width: { xs: "100%", md: "auto" } }} // Adjusted button width for different screen sizes
           >
             Add Massage
           </Button>
-          <DeleteMass arrToList={deleteMsgIds} handleDelete={handleDelete} />
+          <DeleteMass
+            arrToList={deleteMsgIds}
+            handleDelete={handleDelete}
+            size="large"
+            sx={{ width: { xs: "100%", md: "auto" } }} // Adjusted button width for different screen sizes
+          />
         </Box>
       </Box>
     </>
